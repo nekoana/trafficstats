@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Traffic Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_grant_traffic_permission"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btn_grant_traffic_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grant Traffic Permission"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start_service"
+        app:layout_constraintEnd_toEndOf="@+id/btn_grant_permission"
+        app:layout_constraintStart_toStartOf="@+id/btn_grant_permission"
+        app:layout_constraintTop_toBottomOf="@+id/btn_grant_permission"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btn_grant_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grant Floating Window Permission"
+        app:layout_constraintBottom_toTopOf="@+id/btn_grant_traffic_permission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
